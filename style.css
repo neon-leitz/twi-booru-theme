@@ -328,24 +328,7 @@ table.image_info tr:last-of-type td {
 /* ----------------------- */
 .tag_list {
     width: 100%;
-}
-
-.tag_list thead tr > th {
-    border: none;
-}
-
-.tag_list tr {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    border: none;
-}
-
-.tag_list tr,
-.tag_list th,
-.tag_list td {
-    border: none !important;
+    border-collapse: collapse;
 }
 
 .tag_list td, th {
@@ -554,7 +537,7 @@ header > h1:hover {
 /* ----------------- */
 /* Mobile styles     */
 /* ----------------- */
-@media (max-width: 1000px) or (max-aspect-ratio: 4/5)  {
+@media only screen and (max-device-width: 640px) {
     :root {
         --main-left-offset: 0;
         --base-font-size: 3rem;
