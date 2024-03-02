@@ -21,7 +21,7 @@ function show_nav(nav, others, body) {
     body.style.position = "fixed";
 }
 
-if (window.matchMedia("(max-width: 1000px) or (max-aspect-ratio: 4/5)").matches) {
+if (window.matchMedia("only scree and (max-device-width: 1000px)").matches) {
     console.log("MOBILE MODE");
     let h1 = document.querySelector("header > h1");
     let div = document.createElement("div");
