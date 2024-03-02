@@ -236,6 +236,64 @@ select:-webkit-autofill:focus {
 }
 
 
+/* ----------------------- */
+/* Related Tags formatting */
+/* ----------------------- */
+.tag_list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tag_list td, th {
+    padding: 0.15rem 0.5rem;
+}
+
+.tag_list tr td:nth-of-type(2) {
+    overflow-wrap: anywhere;
+}
+
+.tag_list tbody tr:nth-of-type(odd) {
+    background: var(--bg-body);
+    filter: brightness(0.95);
+    @media (prefers-color-scheme: dark) {
+        filter: brightness(1.2);
+    }
+}
+
+.image_info th {
+    color: #413b3b;
+    color: var(--text-body);
+}
+
+.image_info tbody tr:last-of-type {
+    padding: 0;
+    border: none;
+}
+
+.image_info tbody tr:last-of-type input {
+    margin-top: 10px;
+}
+
+
+/* ----------------------- */
+/* Misc .blockbody styles  */
+/* ----------------------- */
+.blockbody {
+    color: var(--text-body);
+    background: var(--bg-body) !important;
+    padding: 0.5rem;
+}
+
+.blockbody table {
+    background: var(--bg-main);
+}
+
+.blockbody table td,
+.blockbody table tr,
+.blockbody table th {
+    border: 2px solid var(--bg-heading);
+}
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 *             The navigation bar, and all its blocks             *
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -254,6 +312,7 @@ nav section h3 {
     background: var(--bg-heading);
     color: var(--text-heading);
     margin: 0;
+    padding: 0.5rem 0.25rem;
 }
 
 nav section h3:first-of-type {
@@ -268,11 +327,7 @@ nav section h3:first-of-type {
 nav section > .blockbody {
     text-align: center;
     margin: 0;
-    border: 4px solid var(--bg-heading);
-    border-top: none;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    box-shadow: none;
+    border: none;
 }
 
 nav input {
@@ -321,64 +376,6 @@ table.image_info tr:last-of-type td {
     background: none;
     border: none;
     box-shadow: none;
-}
-
-/* ----------------------- */
-/* Related Tags formatting */
-/* ----------------------- */
-.tag_list {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.tag_list td, th {
-    padding: 0.15rem 0.5rem;
-}
-
-.tag_list tr td:nth-of-type(2) {
-    overflow-wrap: anywhere;
-}
-
-.tag_list tbody tr:nth-of-type(odd) {
-    background: var(--bg-body);
-    filter: brightness(0.95);
-    @media (prefers-color-scheme: dark) {
-        filter: brightness(1.2);
-    }
-}
-
-.image_info th {
-    color: #413b3b;
-    color: var(--text-body);
-}
-
-.image_info tbody tr:last-of-type {
-    padding: 0;
-    border: none;
-}
-
-.image_info tbody tr:last-of-type input {
-    margin-top: 10px;
-}
-
-
-/* ----------------------- */
-/* Misc .blockbody styles  */
-/* ----------------------- */
-.blockbody {
-    color: var(--text-body);
-    background: var(--bg-body) !important;
-    padding: 0.5rem 0.25rem;
-}
-
-.blockbody table {
-    background: var(--bg-main);
-}
-
-.blockbody table td,
-.blockbody table tr,
-.blockbody table th {
-    border: 2px solid var(--bg-heading);
 }
 
 
@@ -453,9 +450,12 @@ ARTICLE TABLE {
 /* --------------- */
 /* Tag edit cloud  */
 /* --------------- */
+#tageditcloud {
+  line-height: 2.7rem;
+}
+
 #tageditcloud span.tag-category > span {
     padding: 0.25rem 0.5rem;
-    line-height: 2rem;
     border-radius: 0.25rem;
     color: var(--text-heading);
     background: var(--bg-heading);
