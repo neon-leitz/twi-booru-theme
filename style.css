@@ -47,7 +47,7 @@ img {
     --hl-2: #D25041;
 
     /* Fonts */
-    --base-font-size: 1.2rem;
+    --base-font-size: 1rem;
 
     /* Layout / spacing */
     --header-height: calc(var(--base-font-size) * 2);
