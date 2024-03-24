@@ -53,7 +53,6 @@ class Page extends BasePage
 			$main_block_html
 		</article>
 		<footer>
-			<hr>
 			$footer_html
 		</footer>
 EOD;
