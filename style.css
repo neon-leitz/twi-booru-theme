@@ -691,4 +691,26 @@ header > h1:hover {
     footer {
         font-size: 1.75rem !important;
     }
+
+    /* Temp style fix for home page */
+    #front-page {
+      width: 100%;
+      position: absolute;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    #front-page input[name="search"] {
+        width: 90%;
+        height: 3rem;
+        margin: 0.5rem 0;
+    }
+    #front-page input[type="submit"] {
+        width: 90%;
+        height: 3rem;
+    }
+
+    #front-page h1 {
+        margin: 0 1rem;
+    }
 }
