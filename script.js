@@ -21,16 +21,18 @@ function show_nav(nav, others, body) {
     body.style.position = "fixed";
 }
 
-if (window.matchMedia("only scree and (max-device-width: 1000px)").matches) {
+if (window.matchMedia("only screen and (max-device-width: 640px)").matches) {
     console.log("MOBILE MODE");
     let h1 = document.querySelector("header > h1");
+    h1.textContent = "Booru";
+
+
     let div = document.createElement("div");
     div.classList.add("nav-button-overlay");
 
 
     let others = document.querySelectorAll("body > *:not(nav, header)");
     div.addEventListener("click", e => {
-        console.log("NAVBAR ACTIVATE!")
         let nav = document.querySelector("nav");
         let body = document.querySelector("body");
         if (nav.classList.contains("show-nav")) {

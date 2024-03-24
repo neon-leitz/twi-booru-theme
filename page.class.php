@@ -48,6 +48,9 @@ class Page extends BasePage
 
         return <<<EOD
 		$left
+    <header>
+      <h1></h1>
+    </header>
 		<article class="$withleft">
 			$flash_html
 			$main_block_html
