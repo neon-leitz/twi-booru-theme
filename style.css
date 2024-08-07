@@ -411,10 +411,6 @@ nav select {
   border-width: 0.25em;
 }
 
-.thumb img:hover {
-    transform: scale(1.15);
-}
-
 /* --------------- */
 /* Tag edit cloud  */
 /* --------------- */
