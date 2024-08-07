@@ -384,13 +384,12 @@ nav select {
 .shm-image-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2.5rem;
     justify-content: center;
 }
 
 .shm-image-list .thumb,
 .thumb {
-    width: 226px;
     display: inline-block;
     zoom: 1; /* ie6 */
     display: inline; /* ie6 */
