@@ -382,10 +382,11 @@ nav select {
 }
 
 .shm-image-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-    justify-content: center;
+    display: grid;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
 }
 
 .shm-image-list .thumb,
@@ -403,6 +404,9 @@ nav select {
     box-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* standard, opera */
     -webkit-box-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* webkit haven't committed yet */
     -moz-box-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* mozilla haven't committed yet */
+    max-width: 300px;
+    width: auto;
+    height: auto;
 }
 
 .thumb IMG[title ~= "meta:animated"] {
@@ -665,6 +669,15 @@ header > h1:hover {
     .shm-image-list .thumb img {
         height: auto;
         width: 80%;
+    }
+
+    .shm-image-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .thumb img {
+        max-width: unset;
     }
 
     .thumb img:hover {
