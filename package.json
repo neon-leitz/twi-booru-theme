@@ -1,0 +1,12 @@
+{
+  "name": "twi-booru-theme",
+  "version": "1.0.0",
+  "description": "Theme for The Wandering Inn Booru",
+  "repository": "git@neon.github.com:neon-leitz/twi-booru-theme.git",
+  "author": "neon-leitz <neon.leitz99@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "stylelint": "^16.8.1",
+    "stylelint-config-standard": "^36.0.1"
+  }
+}
