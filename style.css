@@ -431,7 +431,13 @@ nav select {
 
 /* --------------- */
 #tageditcloud {
-  line-height: 2.7rem;
+    line-height: 2.7rem;
+}
+
+#tageditcloud span.tag-category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
 }
 
 #tageditcloud span.tag-category > span {
@@ -445,6 +451,11 @@ nav select {
     background: black;
     color: var(--text-heading);
     border: none;
+}
+
+#tagcloud_extra,
+#tagcloud_unset {
+    margin-block-start: 0.4rem;
 }
 
 /* ----------------------- */
@@ -750,5 +761,10 @@ header > h1:hover {
 
     .autocomplete_completions {
       font-size: 1rem;
+    }
+
+    #tageditcloud span.tag-category {
+        gap: 1rem;
+        font-size: 2rem;
     }
 }
